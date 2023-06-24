@@ -10,6 +10,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "./design.css";
 import { useState } from "react";
+import theme from "../utility/Theme";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState<null | HTMLElement>(null);
@@ -116,11 +117,14 @@ const NavBar = () => {
                 </MenuItem>
                 <MenuItem onClick={handleMenuClose}>
                   <Button variant="contained">
-                    <ShoppingCartIcon />
+                    <ShoppingCartIcon
+                      htmlColor={theme.palette.secondary.main}
+                    />
                     <Typography
                       variant="body1"
                       fontWeight={800}
                       textTransform={"none"}
+                      color={theme.palette.secondary.main}
                     >
                       Cart
                     </Typography>
@@ -189,7 +193,7 @@ const NavBar = () => {
             >
               <Hidden mdDown>
                 <Button variant="contained">
-                  <ShoppingCartIcon />
+                  <ShoppingCartIcon htmlColor={theme.palette.secondary.main} />
                   <Typography
                     variant="body1"
                     fontWeight={800}
