@@ -140,14 +140,11 @@
   /* background-position: 250px 30px; */
   background-size: 100% 100%;
   height: 40vh;
-  width: 50%;
-  z-index: 21;
+  width: 30%;
+  z-index: 2;
 }
 @media only screen and (max-width: 600px) {
   .newsletterImage::before {
     display: none;
-  }
-  .statisticBanner::after {
-    height: 100vh;
   }
 }
