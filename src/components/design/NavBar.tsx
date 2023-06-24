@@ -6,6 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
 import { Button, IconButton, Menu, MenuItem } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "./design.css";
 import { useState } from "react";
@@ -113,6 +114,18 @@ const NavBar = () => {
                     Pages
                   </Typography>
                 </MenuItem>
+                <MenuItem onClick={handleMenuClose}>
+                  <Button variant="contained">
+                    <ShoppingCartIcon />
+                    <Typography
+                      variant="body1"
+                      fontWeight={800}
+                      textTransform={"none"}
+                    >
+                      Cart
+                    </Typography>
+                  </Button>
+                </MenuItem>
               </Menu>
             </Hidden>
             <Hidden mdDown>
@@ -175,7 +188,8 @@ const NavBar = () => {
               alignItems="center"
             >
               <Hidden mdDown>
-                <Button color="inherit">
+                <Button variant="contained">
+                  <ShoppingCartIcon />
                   <Typography
                     variant="body1"
                     fontWeight={800}
