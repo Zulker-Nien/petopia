@@ -1,0 +1,153 @@
+.headerImage {
+  background-image: url("/public/Assets/Backgrounds/dog1.svg");
+  height: 120%;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.statisticBanner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.statisticBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/Statistic-Banner-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 75vh;
+  width: 100%;
+  z-index: -1;
+}
+.statisticBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/Statistic-Banner-2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 75vh;
+  width: 100%;
+  z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+  .statisticBanner::before {
+    height: 100vh;
+  }
+  .statisticBanner::after {
+    height: 100vh;
+  }
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+  transition: 1s background-color;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+}
+.card:hover {
+  background-color: #7c58d3;
+  color: #fff;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/Service-path.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/Paws.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.newsletterBanner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.newsletterBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/public/Assets/Backgrounds/Cute_grey_dog.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 250px 30px;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+.newsletterBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/Statistic-Banner-1.svg");
+  background-repeat: no-repeat;
+  /* background-position: -250px; */
+  background-size: 100% 100%;
+  height: 75vh;
+  width: 100%;
+  z-index: -2;
+}
+.newsletterImage::before {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/Cute_brown_dog.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 250px 30px; */
+  background-size: 100% 100%;
+  height: 40vh;
+  width: 50%;
+  z-index: 21;
+}
+@media only screen and (max-width: 600px) {
+  .newsletterImage::before {
+    display: none;
+  }
+  .statisticBanner::after {
+    height: 100vh;
+  }
+}

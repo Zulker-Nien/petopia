@@ -1,0 +1,66 @@
+.collection {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.collection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/pet-accessories.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  transform: scale(-2, 2);
+  z-index: -1;
+}
+.specialSideBox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.specialSideBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/pet-dressed-necktie.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10px;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.specialSideBox2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.specialSideBox2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/public/Assets/Backgrounds/charles-deluvio.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

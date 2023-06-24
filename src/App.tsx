@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "@mui/material";
+import "./App.css";
+import TopBar from "./components/design/TopBar";
+import theme from "./components/utility/Theme";
+import NavBar from "./components/design/NavBar";
+import Header from "./components/design/Header";
+import StatisticBanner from "./components/design/StatisticBanner";
+import ServiceHome from "./components/services/ServiceHome";
+import Collection from "./components/special/Collection";
+import ProductCampaign from "./components/special/ProductCampaign";
+import NewsletterBanner from "./components/design/NewsletterBanner";
+import Blog from "./components/special/Blog";
+import Contact from "./components/design/Contact";
+import Other from "./components/special/Other";
+import Footer from "./components/design/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="headerBackground">
+        <TopBar />
+        <NavBar />
+        <Header />
+        <StatisticBanner />
+        <ServiceHome />
+        <Collection />
+        <ProductCampaign />
+        <NewsletterBanner />
+        <Blog />
+        <Contact />
+        <Other />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
