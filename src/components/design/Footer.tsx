@@ -13,7 +13,13 @@ const Footer = () => {
     <Box sx={{ backgroundColor: "#FFFEFD", paddingTop: "20px" }}>
       <Container>
         <Grid container>
-          <Grid item md={12} sx={{ borderBottom: "0.3px solid gray" }} py={3}>
+          <Grid
+            item
+            md={12}
+            sx={{ borderBottom: "0.3px solid gray" }}
+            // mb={"100px"}
+            height={{ xs: "100%" }}
+          >
             <Grid
               container
               display={"flex"}
@@ -23,12 +29,18 @@ const Footer = () => {
             >
               <Grid item md={3} xs={12}>
                 <Container>
-                  <img
-                    alt="footerLogo"
-                    src={FooterLogo}
-                    style={{ paddingBottom: "20px" }}
-                  />
-                  <Typography py={2} fontFamily={"Nunito Sans"}>
+                  <Box sx={{ display: "flex", justifyContent: "center" }}>
+                    <img
+                      alt="footerLogo"
+                      src={FooterLogo}
+                      style={{ paddingBottom: "2px" }}
+                    />
+                  </Box>
+                  <Typography
+                    py={2}
+                    textAlign={"justify"}
+                    fontFamily={"Nunito Sans"}
+                  >
                     Tristique nulla aliquet enim tortor at auctor urna nunc.
                     Massa enim nec dui nunc mattis enim ut tellus. Sed ut
                     perspiciatis unde ...
@@ -154,66 +166,79 @@ const Footer = () => {
                 </Grid>
               </Grid>
               <Grid item md={3} height={"25vh"}>
-                <Typography
-                  variant="h5"
-                  fontFamily={"Nunito Sans"}
-                  fontWeight={800}
-                  color={theme.palette.secondary.main}
-                >
-                  Newsletter
-                </Typography>
-                <Grid item>
-                  <Typography pt={4}>
-                    Be first in the queue! Get our latest news straight to your
-                    inbox.
+                <Container>
+                  <Typography
+                    variant="h5"
+                    textAlign={"center"}
+                    fontFamily={"Nunito Sans"}
+                    fontWeight={800}
+                    pb={"20px"}
+                    color={theme.palette.secondary.main}
+                  >
+                    Newsletter
                   </Typography>
-                  <Box
-                    display={"flex"}
-                    justifyContent={"space-between"}
-                    alignItems={"center"}
-                    py={2}
-                  >
-                    <TextField
-                      id="outlined-basic"
-                      label="Outlined"
-                      variant="outlined"
-                    />
-                    <Button
-                      size="medium"
-                      sx={{
-                        fontWeight: 800,
-                        backgroundColor: "#FFDA47",
-                        color: theme.palette.secondary.main,
-                        height: { md: "100%", xs: "6vh" },
-                        "&:hover": {
-                          color: "#FFDA47",
-                          border: "1px solid #ffDA47",
-                        },
-                        padding: "15px",
-                      }}
-                      className="serviceButton"
+                  <Grid item>
+                    <Typography>
+                      Be first in the queue! Get our latest news straight to
+                      your inbox.
+                    </Typography>
+                    <Box
+                      display={"flex"}
+                      justifyContent={"space-between"}
+                      alignItems={"center"}
+                      py={2}
                     >
-                      <ArrowForwardIcon />
-                    </Button>
-                  </Box>
-                  <Box
-                    sx={{
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <FacebookIcon htmlColor={theme.palette.secondary.main} />
-                    <Instagram htmlColor={theme.palette.secondary.main} />
-                    <Twitter htmlColor={theme.palette.secondary.main} />
-                    <WhatsApp htmlColor={theme.palette.secondary.main} />
-                  </Box>
-                </Grid>
+                      <TextField
+                        id="outlined-basic"
+                        label="Outlined"
+                        variant="outlined"
+                      />
+                      <Button
+                        size="medium"
+                        sx={{
+                          fontWeight: 800,
+                          backgroundColor: "#FFDA47",
+                          color: theme.palette.secondary.main,
+                          height: { md: "100%", xs: "6vh" },
+                          "&:hover": {
+                            color: "#FFDA47",
+                            border: "1px solid #ffDA47",
+                          },
+                          padding: "15px",
+                        }}
+                        className="serviceButton"
+                      >
+                        <ArrowForwardIcon />
+                      </Button>
+                    </Box>
+                    <Box
+                      sx={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <FacebookIcon htmlColor={theme.palette.secondary.main} />
+                      <Instagram htmlColor={theme.palette.secondary.main} />
+                      <Twitter htmlColor={theme.palette.secondary.main} />
+                      <WhatsApp htmlColor={theme.palette.secondary.main} />
+                    </Box>
+                  </Grid>
+                </Container>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item md={12} textAlign={"center"} py={3}>
-            NOOT © All rights reserved Copyrights 2023
+          <Grid
+            item
+            md={12}
+            width={"100%"}
+            // textAlign={"center"}
+            height={"100px"}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+          >
+            <Typography>NOOT © All rights reserved Copyrights 2023</Typography>
           </Grid>
         </Grid>
       </Container>
