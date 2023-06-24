@@ -50,7 +50,6 @@ const Banner = () => {
           sx={{
             display: "flex",
             width: { md: "18vw", xs: "100%" },
-            // width: "18vw",
             justifyContent: { md: "space-between", xs: "space-around" },
 
             padding: { md: 0, xs: "20px" },

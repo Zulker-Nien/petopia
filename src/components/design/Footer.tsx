@@ -17,7 +17,6 @@ const Footer = () => {
             item
             md={12}
             sx={{ borderBottom: "0.3px solid gray" }}
-            // mb={"100px"}
             height={{ xs: "100%" }}
           >
             <Grid
@@ -232,7 +231,6 @@ const Footer = () => {
             item
             md={12}
             width={"100%"}
-            // textAlign={"center"}
             height={"100px"}
             display={"flex"}
             alignItems={"center"}

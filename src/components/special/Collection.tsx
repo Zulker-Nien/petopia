@@ -27,7 +27,6 @@ const Collection = () => {
                   item
                   md={12}
                   pb={10}
-                  //   sx={{ backgroundColor: "orange" }}
                   display={"flex"}
                   justifyContent={"flex-end"}
                 >
