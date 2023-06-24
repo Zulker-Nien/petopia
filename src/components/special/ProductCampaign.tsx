@@ -65,7 +65,7 @@ const ProductCampaign = () => {
             mb={4}
             textAlign={"center"}
           >
-            Top Products
+            Top Rated Products
           </Typography>
           {topProducts.map((item, index) => {
             return (
