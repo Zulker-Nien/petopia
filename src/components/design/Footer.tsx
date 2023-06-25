@@ -17,7 +17,7 @@ const Footer = () => {
             item
             md={12}
             sx={{ borderBottom: "0.3px solid gray" }}
-            height={{ xs: "100%" }}
+            height={"100%"}
           >
             <Grid
               container
@@ -110,61 +110,63 @@ const Footer = () => {
                   </Grid>
                 </Container>
               </Grid>
-              <Grid item md={3} height={"25vh"}>
-                <Typography
-                  variant="h5"
-                  fontFamily={"Nunito Sans"}
-                  fontWeight={800}
-                  textAlign={"center"}
-                  color={theme.palette.secondary.main}
-                  pb={"20px"}
-                >
-                  Useful Links
-                </Typography>
-                <Grid container>
-                  <Grid
-                    xs={12}
-                    md={12}
-                    display="flex"
-                    justifyContent={"space-around"}
-                    pb={2}
+              <Grid item md={3} height={"100%"}>
+                <Container>
+                  <Typography
+                    variant="h5"
+                    fontFamily={"Nunito Sans"}
+                    fontWeight={800}
+                    textAlign={"center"}
+                    color={theme.palette.secondary.main}
+                    pb={"20px"}
                   >
-                    <Typography fontWeight={800}>Home</Typography>
-                    <Typography fontWeight={800}>FAQ</Typography>
+                    Useful Links
+                  </Typography>
+                  <Grid container>
+                    <Grid
+                      xs={12}
+                      md={12}
+                      display="flex"
+                      justifyContent={"space-around"}
+                      pb={2}
+                    >
+                      <Typography fontWeight={800}>Home</Typography>
+                      <Typography fontWeight={800}>FAQ</Typography>
+                    </Grid>
+                    <Grid
+                      xs={12}
+                      md={12}
+                      display="flex"
+                      justifyContent={"space-around"}
+                      pb={2}
+                    >
+                      <Typography fontWeight={800}>About</Typography>
+                      <Typography fontWeight={800}>Gallery</Typography>
+                    </Grid>
+                    <Grid
+                      xs={12}
+                      md={12}
+                      display="flex"
+                      justifyContent={"space-around"}
+                      pb={2}
+                    >
+                      <Typography fontWeight={800}>Services</Typography>
+                      <Typography fontWeight={800}>Delivery</Typography>
+                    </Grid>
+                    <Grid
+                      xs={12}
+                      md={12}
+                      display="flex"
+                      justifyContent={"space-around"}
+                      pb={2}
+                    >
+                      <Typography fontWeight={800}>Shop</Typography>
+                      <Typography fontWeight={800}>Sales</Typography>
+                    </Grid>
                   </Grid>
-                  <Grid
-                    xs={12}
-                    md={12}
-                    display="flex"
-                    justifyContent={"space-around"}
-                    pb={2}
-                  >
-                    <Typography fontWeight={800}>About</Typography>
-                    <Typography fontWeight={800}>Gallery</Typography>
-                  </Grid>
-                  <Grid
-                    xs={12}
-                    md={12}
-                    display="flex"
-                    justifyContent={"space-around"}
-                    pb={2}
-                  >
-                    <Typography fontWeight={800}>Services</Typography>
-                    <Typography fontWeight={800}>Delivery</Typography>
-                  </Grid>
-                  <Grid
-                    xs={12}
-                    md={12}
-                    display="flex"
-                    justifyContent={"space-around"}
-                    pb={2}
-                  >
-                    <Typography fontWeight={800}>Shop</Typography>
-                    <Typography fontWeight={800}>Sales</Typography>
-                  </Grid>
-                </Grid>
+                </Container>
               </Grid>
-              <Grid item md={3} height={"25vh"}>
+              <Grid item md={3} height={"100%"}>
                 <Container>
                   <Typography
                     variant="h5"
@@ -231,12 +233,17 @@ const Footer = () => {
             item
             md={12}
             width={"100%"}
+            textAlign={"center"}
             height={"100px"}
             display={"flex"}
             alignItems={"center"}
             justifyContent={"center"}
           >
-            <Typography>NOOT © All rights reserved Copyrights 2023</Typography>
+            <Container>
+              <Typography>
+                NOOT © All rights reserved Copyrights 2023
+              </Typography>
+            </Container>
           </Grid>
         </Grid>
       </Container>
