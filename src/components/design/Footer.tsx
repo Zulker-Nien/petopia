@@ -18,6 +18,7 @@ const Footer = () => {
             md={12}
             sx={{ borderBottom: "0.3px solid gray" }}
             height={"100%"}
+            pb={"20px"}
           >
             <Grid
               container
